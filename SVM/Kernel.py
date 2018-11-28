@@ -1,10 +1,6 @@
 # coding=utf8
 import warnings
-from sklearn import svm
-
 import numpy as np
-import abc
-from sklearn import svm
 
 class AbstractSVMKernel(object):
     '''
