@@ -105,7 +105,7 @@ class SigmoidKernel(AbstractSVMKernel):
         Sigmoid核内积
         tanh(gamma * np.dot(xi.T, xj) + r)
         '''
-        return self.gamma * np.dot(xi, xj.T) + self.r
+        return np.tanh(self.gamma * np.dot(xi, xj.T) + self.r)
 
 
 def kernel(kernel_name=None, **kernel_params):
