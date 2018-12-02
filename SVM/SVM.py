@@ -213,7 +213,7 @@ class SVM(object):
 
     def compute_alpha_j(self, j, Ei, Ej, eta):
         '''
-        未裁剪的alpha_j: alpha_j_new = alpha_j_old * y_i * (Ei - Ej) / eta
+        未裁剪的alpha_j: alpha_j_new = alpha_j_old * y_j * (Ei - Ej) / eta
         '''
         return self.alpha[j] + self.y[j] * (Ei - Ej) / eta
 
